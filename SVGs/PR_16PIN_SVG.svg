@@ -1,11 +1,16 @@
 <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
-      .silk-logo { fill: #ffffff; font-family: 'Space Grotesk', sans-serif; font-weight: 700; text-anchor: middle; }
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+      .silk-logo {
+        fill: #ffffff;
+        font-family: 'Space Grotesk', 'Inter', 'Segoe UI', Arial, sans-serif;
+        font-weight: 700;
+        text-anchor: middle;
+      }
       .silk-border { fill: none; stroke: #ffffff; stroke-width: 2.5; }
       .pin { fill: #ffffff; }
-    </style>
+    ]]></style>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0f766e; stop-opacity:1" />
       <stop offset="100%" style="stop-color:#2563eb; stop-opacity:1" />
