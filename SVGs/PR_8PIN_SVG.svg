@@ -1,4 +1,7 @@
+<svg width="100" height="100" viewBox="5 5 100 100" xmlns="http://www.w3.org/2000/svg">
+<!-- Original was:
 <svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+  -->
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
@@ -9,7 +12,7 @@
         font-weight: 700; 
         text-anchor: middle;
       }
-      .silk-border { fill: none; stroke: #ffffff; stroke-width: 2.5; }
+      .silk-border { fill: none; stroke: #ffffff; stroke-width: 4; }
       .pin { fill: #ffffff; }
     </style>
     
@@ -23,18 +26,18 @@
   <rect width="110" height="110" rx="8" ry="8" fill="url(#bgGradient)"/>
   
   <!-- Stylized Chip Body -->
-  <rect x="20" y="20" width="70" height="70" rx="4" ry="4" class="silk-border"/>
+  <rect x="20" y="20" width="70" height="70" rx="5" ry="5" class="silk-border"/>
 
   <!-- Pins (Centered vertically with 6px gaps) -->
-  <rect x="15" y="30" width="5" height="8" class="pin"/>
-  <rect x="15" y="44" width="5" height="8" class="pin"/>
-  <rect x="15" y="58" width="5" height="8" class="pin"/>
-  <rect x="15" y="72" width="5" height="8" class="pin"/>
+  <rect x="12" y="30" width="8" height="8" class="pin"/>
+  <rect x="12" y="44" width="8" height="8" class="pin"/>
+  <rect x="12" y="58" width="8" height="8" class="pin"/>
+  <rect x="12" y="72" width="8" height="8" class="pin"/>
 
-  <rect x="90" y="30" width="5" height="8" class="pin"/>
-  <rect x="90" y="44" width="5" height="8" class="pin"/>
-  <rect x="90" y="58" width="5" height="8" class="pin"/>
-  <rect x="90" y="72" width="5" height="8" class="pin"/>
+  <rect x="90" y="30" width="8" height="8" class="pin"/>
+  <rect x="90" y="44" width="8" height="8" class="pin"/>
+  <rect x="90" y="58" width="8" height="8" class="pin"/>
+  <rect x="90" y="72" width="8" height="8" class="pin"/>
 
   <!-- "PR" Text -->
   <text x="55" y="68" font-size="35" class="silk-logo">PR</text>
