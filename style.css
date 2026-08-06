@@ -551,7 +551,7 @@ footer {
     }
 
     .brand-text {
-        align-items: center;
+        align-items: flex-start;
         text-align: center;
     }
 
