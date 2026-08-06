@@ -155,6 +155,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul a {
@@ -204,6 +205,9 @@ main {
 
 .hero-content {
     max-width: 760px;
+    width: min(760px, 100%);
+    padding-inline: 1rem;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -237,6 +241,9 @@ main {
 .section {
     padding: 2rem 0 0.0rem;
 }
+
+/* Keep section content aligned with hero width and responsive */
+/* Reverted section width constraints to original flow */
 
 .section-heading {
     font-family: var(--font-heading);
@@ -296,8 +303,8 @@ article,
     background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(37, 99, 235, 0.06));
 }
 
-article h3,
-.section h2 {
+.section h2,
+article h3 {
     text-align: center;
     margin-top: 0;
 }
@@ -419,5 +426,115 @@ footer {
     .hero {
         padding: 2rem 1rem;
         text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content {
+        padding-inline: 1rem;
+        width: min(760px, 100%);
+    }
+
+    nav {
+        padding: 1rem 0.8rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+/* Move nav under the brand/title at tablet widths to avoid wrapping issues */
+@media (max-width: 840px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .brand-wrap {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        width: auto;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ensure nav pills don't stretch the layout */
+    nav ul a {
+        white-space: nowrap;
+    }
+
+    /* Keep section content and hero aligned */
+    .hero-content,
+    .section>p,
+    .section .grid {
+        max-width: 720px;
+        width: min(720px, 100%);
+        margin: 0 auto;
+    }
+}
+
+/* Small phones: compact spacing and readable type */
+@media (max-width: 480px) {
+    .hero {
+        padding: 1.5rem 0.75rem;
+        border-radius: 16px;
+    }
+
+    .hero-content {
+        padding-inline: 0.75rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.6rem, 6vw, 2.2rem);
+    }
+
+    .section {
+        padding: 1rem 0 0;
+    }
+
+    .section>p,
+    .section .grid {
+        padding-inline: 0.75rem;
+    }
+
+    article,
+    .contact-card,
+    .about-card {
+        padding: 0.9rem;
+        border-radius: 12px;
+    }
+
+    .copy-box {
+        padding: 0.8rem;
+    }
+
+    #repair-template {
+        font-size: 0.95rem;
+    }
+
+    nav ul a {
+        padding: 0.55rem 0.85rem;
+        font-size: 0.85rem;
+    }
+
+    nav {
+        padding: 0.8rem 0.8rem;
     }
 }
