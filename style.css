@@ -216,6 +216,16 @@ main {
     letter-spacing: -0.02em;
 }
 
+.hero h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-heading-lg);
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+    color: var(--accent-dark);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
 .hero p {
     margin: 0 auto;
     color: var(--muted);
@@ -228,7 +238,7 @@ main {
     padding: 2rem 0 0.0rem;
 }
 
-h2 {
+.section-heading {
     font-family: var(--font-heading);
     font-size: var(--font-size-heading-lg);
     font-weight: 700;
@@ -236,15 +246,20 @@ h2 {
     color: var(--accent-dark);
     line-height: 1.2;
     letter-spacing: -0.02em;
-}
-
-.section h2 {
     position: relative;
     display: inline-block;
     padding-bottom: 0.25rem;
 }
 
-.section h2::after {
+.hero .section-heading {
+    padding-bottom: 0;
+}
+
+.hero .section-heading::after {
+    display: none;
+}
+
+.section-heading::after {
     content: "";
     position: absolute;
     left: 0;
