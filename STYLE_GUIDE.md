@@ -23,3 +23,13 @@ Use these values for the Parry Repair site.
 - Body text: Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
 - Headings and display text: Space Grotesk, Inter, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
 - Use the heading font for the brand, section titles, and call-to-action elements to keep the site feeling polished and technical.
+
+## Spacing
+- Use a consistent spacing scale based on 0.35rem increments for a tighter, more polished rhythm.
+- Recommended values: 0.35rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 2rem, 2.5rem, 3rem.
+- Apply these values to section padding, intro card spacing, card gaps, and footer spacing to keep the page visually balanced.
+
+## Section Composition
+- Each major section should include a short intro block with a small kicker label, a heading, and supporting copy.
+- Keep intro blocks subtle and structured with a light border, soft background gradient, and restrained padding.
+- Use this pattern to make section content feel intentional and cohesive rather than flat.
