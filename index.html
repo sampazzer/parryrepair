@@ -62,30 +62,31 @@
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="top">
         <section id="about-me" class="section hero">
-            <div class="section-intro">
+            <div class="hero-intro">
                 <span class="kicker">Welcome</span>
-                <h1>Professional Electronics Repair in Chester</h1>
-                <p>I specialize in component-level repairs for audio equipment, consumer electronics, and custom electronic projects. Based in Chester, England, with a background in military aircraft avionics and pharmaceutical automation.</p>
+                <h1>Professional Electronics Repair</h1>
+                <p>Component-level repairs for audio equipment, consumer electronics, and custom projects. Based in Chester, England.</p>
             </div>
         </section>
 
-        <section id="services" class="section">
+        <section id="services" class="section services">
             <div class="section-intro">
                 <span class="kicker">What I Do</span>
                 <h2 class="section-heading">Repair Services</h2>
-                <p>I specialize in component-level repairs across three main areas. Select a category to learn more.</p>
+                <p>I specialize in three main areas of electronics repair. Each category covers a range of devices and systems.</p>
             </div>
-            <div class="grid">
-                <article>
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="card-icon">🔊</span>
                     <h3>Audio & Hi-Fi</h3>
-                    <ul class="service-list">
+                    <ul>
                         <li>Home amplifiers</li>
                         <li>Car amplifiers</li>
                         <li>Guitar amplifiers</li>
@@ -93,17 +94,19 @@
                         <li>Retro gear</li>
                     </ul>
                 </article>
-                <article>
+                <article class="service-card">
+                    <span class="card-icon">💻</span>
                     <h3>Consumer Electronics</h3>
-                    <ul class="service-list">
+                    <ul>
                         <li>Laptop motherboards</li>
                         <li>Small appliances</li>
                         <li>Game consoles</li>
                     </ul>
                 </article>
-                <article>
+                <article class="service-card">
+                    <span class="card-icon">⚙️</span>
                     <h3>Custom & Industrial</h3>
-                    <ul class="service-list">
+                    <ul>
                         <li>PLCs and HMIs</li>
                         <li>CNC power supplies</li>
                         <li>Variable speed drives</li>
@@ -113,27 +116,26 @@
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="about" class="section about">
             <div class="section-intro">
                 <span class="kicker">The Service</span>
                 <h2 class="section-heading">How It Works</h2>
-                <p>I offer a straightforward repair service with a focus on quality workmanship and clear communication. You'll get a detailed report with the work performed, including images where applicable — so there are no surprise costs.</p>
+                <p>I offer a straightforward repair service with a focus on quality workmanship and clear communication. You'll receive a detailed report with the work performed, including images where applicable — so there are no surprise costs.</p>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section contact">
             <div class="section-intro">
                 <span class="kicker">Get in Touch</span>
                 <h2 class="section-heading">Contact</h2>
                 <p>Ready to discuss a repair? Email me with your enquiry and I'll get back to you promptly.</p>
             </div>
-            <div class="contact-grid">
-                <article class="contact-cta">
-                    <h3>Email Me</h3>
-                    <p><a href="mailto:hello@parryelectronicsrepair.co.uk" class="contact-link">hello@parryelectronicsrepair.co.uk</a></p>
-                    <p class="muted-note">*This is not currently live*</p>
-                </article>
-                <article class="contact-template">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <a href="mailto:hello@parryelectronicsrepair.co.uk" class="contact-email">hello@parryelectronicsrepair.co.uk</a>
+                    <p class="contact-note">*This is not currently live*</p>
+                </div>
+                <div class="copy-template">
                     <h3>Repair Enquiry Template</h3>
                     <p>Copy this template into your email:</p>
                     <div class="copy-box">
@@ -146,7 +148,7 @@ Model number:
 Failure symptoms:</pre>
                         <button class="copy-button" onclick="copyRepairTemplate()">Copy to clipboard</button>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     </main>
